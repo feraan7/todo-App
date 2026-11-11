@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 p-6">
+    <main class="mx-auto mt-10 max-w-lg rounded-lg bg-white p-6 shadow">
+        <h1 class="mb-4 text-2xl font-bold">My Todo List</h1>
+
+        <div class="mb-4 flex gap-2">
+            <input id="todo-input" class="min-w-0 flex-1 rounded border p-2" placeholder="Add a task">
+            <button id="add-btn" class="rounded bg-blue-600 px-4 text-white">Add</button>
+        </div>
+
+        <div class="mb-4 flex gap-2">
+            <button id="all-btn" class="rounded bg-blue-600 px-3 py-2 text-white">All</button>
+            <button id="active-btn" class="rounded bg-gray-200 px-3 py-2">Active</button>
+            <button id="completed-btn" class="rounded bg-gray-200 px-3 py-2">Done</button>
+        </div>
+
+        <div id="todo-container" class="space-y-2"></div>
+        <p id="empty-state" class="hidden py-4 text-center text-gray-500">No tasks yet.</p>
+
+        <button id="clear-btn" class="mt-4 rounded bg-red-100 px-3 py-2 text-red-700">Clear All</button>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
